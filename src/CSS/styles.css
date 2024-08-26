@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    color: var(--font-main);
+    font-family: 'Roboto', serif;
+    font-size: 1.15rem;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.6rem;
+}
+
+:root {
+    --background-main: #18181b;
+    --background-accent: #27272a;
+    --font-main: #fafafa;
+    --font-accent: #a1a1aa;
+    --font-darker: #e4e4e7;
+    --button-hover: #3f3f46;
+    --card-border-radius: 18px;
+}
+
+h3 {
+    position: absolute;
+    top: -35px;
+    left: 5px;
+    color: var(--font-accent);
+    font-weight: 500;
+}
+
+.feelslike, .high-low {
+    color: var(--font-accent);
+}
+
+body {
+    background-color: var(--background-main);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 8fr;
+    min-width: 1400px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.input-container {
+    place-self: center end;
+    display: flex;
+    gap: 15px;
+}
+
+button  {
+    border-radius: 12px;
+    height: 50px;
+    width: 87px;
+    border: none;
+    background-color: var(--background-accent);
+    color: var(--font-accent);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+input {
+    border-radius: 15px;
+    height: 50px;
+    width: 400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    background-color: var(--background-accent);
+}
+
+input:focus {
+    outline: none;
+}
+
+.main-container {
+    width: max(1300px, 70vw);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 380px 380px;
+    gap: 50px;
+}
+
+.current-container {
+    position: relative;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--background-accent);
+    border-radius: var(--card-border-radius);
+    padding: 20px;
+    grid-row: 1;
+}
+
+.feelslike {
+    font-size: 1rem;
+}
+
+i {
+    font-size: 2.3rem;
+}
+
+.precip-icon {
+    font-size: 1.15rem;
+}
+
+.precip {
+    display: flex;
+    gap: 10px;
+}
+
+p.temp {
+    font-size: 1.7rem;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.flex-left > * {
+    font-size: 3.1rem;
+    font-weight: bold;
+}
+
+.flex-right > * {
+    font-size: 1.2rem;
+}
+
+.flex-right > .conditions {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.conditions {
+    font-weight: bold;
+}
+
+.date {
+    color: var(--font-accent);
+}
+
+.hourly-container {
+    position: relative;
+    display: grid;
+    background-color: var(--background-accent);
+    border-radius: var(--card-border-radius);
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.daily-container {
+    position: relative;
+    display: grid;
+    background-color: var(--background-accent);
+    border-radius: var(--card-border-radius);
+    grid-column: 1/-1;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.precip {
+    display: flex;
+    align-items: center;
+}
+
+.precip > p, .precip > i {
+    color: var(--font-darker);
+}
+
+div.day, div.hour {
+    background-color: var(--background-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: var(--card-border-radius);
+}
+
+.date-container {
+    text-align: center;
+}
