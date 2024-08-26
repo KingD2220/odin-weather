@@ -47,6 +47,7 @@ h1 {
     place-self: center end;
     display: flex;
     gap: 15px;
+    margin-top: 20px;
 }
 
 button  {
@@ -80,8 +81,9 @@ input:focus {
     width: max(1300px, 70vw);
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 380px 380px;
+    grid-template-rows: 360px 360px;
     gap: 50px;
+    margin-top: 20px;
 }
 
 .current-container {
