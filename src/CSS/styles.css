@@ -81,9 +81,9 @@ input:focus {
     width: max(1300px, 70vw);
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 360px 360px;
+    grid-template-rows: 350px 350px;
     gap: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .current-container {
